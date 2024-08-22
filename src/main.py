@@ -22,8 +22,8 @@ boton_agregar_producto.place(x=190,y=140,relwidth=0.35,relheight=0.10)
 boton_buscar_producto = tk.Button(ventana,text='Buscar producto')
 boton_buscar_producto.place(x=190,y=190,relwidth=0.35,relheight=0.10)
 
-boton_buscar_producto = tk.Button(ventana,text='Buscar producto')
-boton_buscar_producto.place(x=190,y=190,relwidth=0.35,relheight=0.10)
+boton_salir = tk.Button(ventana,text='Salir')
+boton_salir.place(x=190,y=240,relwidth=0.35,relheight=0.10)
 
 
 ventana.mainloop()

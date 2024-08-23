@@ -98,7 +98,14 @@ def calcular():
 boton_calculadora = tk.Button(ventana,text='Calculadora',command=calcular)
 boton_calculadora.place(x=190,y=90,relwidth=0.35,relheight=0.10)
 
-boton_agregar_producto = tk.Button(ventana,text='Agregar producto')
+def agregar_producto():
+	window = tk.Tk()
+	window.geometry('300x250')
+	window.title('Agregar Producto')
+
+
+
+boton_agregar_producto = tk.Button(ventana,text='Agregar producto',command=agregar_producto)
 boton_agregar_producto.place(x=190,y=140,relwidth=0.35,relheight=0.10)
 
 

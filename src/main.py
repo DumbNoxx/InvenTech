@@ -48,8 +48,6 @@ def calcular():
 	boton_suma = tk.Button(window,text='Sumar',command=suma)
 	boton_suma.place(x=10,y=180,relwidth=0.30,relheight=0.09)
 
-
-
 	def resta():
 		numero1 = numero_entrada_1.get()
 		numero2 = numero_entrada_2.get()
@@ -84,8 +82,8 @@ def calcular():
 		numero_resultado.insert(0,r)
 
 
-	boton_suma = tk.Button(window,text='Dividir',command=division)
-	boton_suma.place(x=200,y=220,relwidth=0.30,relheight=0.09)
+	boton_division = tk.Button(window,text='Dividir',command=division)
+	boton_division.place(x=200,y=220,relwidth=0.30,relheight=0.09)
 
 	def salir_ventana_calculadora():
 		resultado = messagebox.askquestion("Salir", 'Quieres salir de la calculadora?', icon='question', default='no')

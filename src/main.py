@@ -100,9 +100,17 @@ boton_calculadora.place(x=190,y=90,relwidth=0.35,relheight=0.10)
 
 def agregar_producto():
 	window = tk.Tk()
-	window.geometry('300x250')
+	window.geometry('400x300')
 	window.title('Agregar Producto')
 
+	serial_label = tk.Label(window,text='Serial Del Producto')
+	serial_label.place(x=20,y=10,relwidth=0.90,relheight=0.20)
+
+	serial_entrada = tk.Entry(window)
+	serial_entrada.place(x=120,y=60,relwidth=0.40,relheight=0.09)
+
+	boton_enviar = tk.Button(window,text='Agregar Producto')
+	boton_enviar.place(x=120,y=90,relwidth=0.40,relheight=0.09)
 
 
 boton_agregar_producto = tk.Button(ventana,text='Agregar producto',command=agregar_producto)

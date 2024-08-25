@@ -112,6 +112,15 @@ def agregar_producto():
 	boton_enviar = tk.Button(window,text='Agregar Producto')
 	boton_enviar.place(x=120,y=90,relwidth=0.40,relheight=0.09)
 
+	def salir_ventana_agregar_producto():
+		resultado = messagebox.askquestion('Salir','Quieres salir de la ventana de Agregar Producto?',icon='question',default='no')
+
+		if resultado == 'yes':
+			window.destroy()
+
+
+	boton_salir = tk.Button(window,text='Salir',command=salir_ventana_agregar_producto)
+	boton_salir.place(x=120,y=120,relwidth=0.40,relheight=0.09)
 
 boton_agregar_producto = tk.Button(ventana,text='Agregar producto',command=agregar_producto)
 boton_agregar_producto.place(x=190,y=140,relwidth=0.35,relheight=0.10)

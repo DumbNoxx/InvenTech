@@ -14,5 +14,8 @@ Hasta el momento solo se puede usar la calculadora, mi plan de funcion de la app
 La ventana principal presenta un menu sencillo y muy amigable con solo 4 botones que te dicen que hacer con la app, hasta el momento se lleva esto, pero me gustaria agregar mas cositas al menu principal.
 
 
+## Ventana de la calculadora
+He actualizado la ventana de la calculadora para que se vea mas interactiva, se ve mas como una calculadora corriente, aun no esta terminada, pero ahi vamos dandole duro. Vamos con todo con esta app.
+
 
 ### Esto es lo que se lleva hasta el momento espero les guste y apoyen mi proyecto, estoy creando apps para escritorio, un placer. :3

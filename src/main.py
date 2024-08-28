@@ -20,72 +20,120 @@ def calcular():
 	window.geometry('300x250')
 	window.title('Calculadora')
 
-	numero_label_1 = tk.Label(window,text='Introduce un numero')
-	numero_label_1.place(x=30,y=10,relwidth=0.90,relheight=0.10)
 
-	numero_entrada_1 = tk.Entry(window)
-	numero_entrada_1.place(x=120,y=39,relwidth=0.25,relheight=0.10)
+	pantalla = tk.Entry(window,bg='green',fg='lightblue')
+	pantalla.place(x=65,y=20,relwidth=0.66,relheight=0.12)
 
-	numero_label_2 = tk.Label(window,text='Introduce otro numero')
-	numero_label_2.place(x=30,y=60,relwidth=0.90,relheight=0.10)
+	def igual():
+		n = pantalla.get()
 
-	numero_entrada_2 = tk.Entry(window)
-	numero_entrada_2.place(x=120,y=80,relwidth=0.25,relheight=0.09)
+		r = int(n) + 1
 
-	numero_resultado_label = tk.Label(window,text='Resultado')
-	numero_resultado_label.place(x=20,y=100,relwidth=0.90,relheight=0.10)
+		pantalla.delete(0,'end')
+		pantalla.insert(0,r)
 
-	numero_resultado = tk.Entry(window)
-	numero_resultado.place(x=120,y=120,relwidth=0.25,relheight=0.09)
-
-	def suma():
-		numero1 = numero_entrada_1.get()
-		numero2 = numero_entrada_2.get()
-
-		r = int(numero1) + int(numero2)
-		numero_resultado.delete(0,'end')
-		numero_resultado.insert(0,r)
+	boton_igual = tk.Button(window,text='=',command=igual)
+	boton_igual.place(x=210,y=130,relwidth=0.16,relheight=0.10)
 
 
-	boton_suma = tk.Button(window,text='Sumar',command=suma)
-	boton_suma.place(x=10,y=180,relwidth=0.30,relheight=0.09)
+	def dividir():
+		n = '/'
+		pantalla.insert(100,n)
 
-	def resta():
-		numero1 = numero_entrada_1.get()
-		numero2 = numero_entrada_2.get()
+	boton_dividir = tk.Button(window,text='/',command=dividir)
+	boton_dividir.place(x=210,y=100,relwidth=0.16,relheight=0.10)
 
-		r = int(numero1) - int(numero2)
-		numero_resultado.delete(0,'end')
-		numero_resultado.insert(0,r)
+	def multiplicar():
+		n = 'x'
+		pantalla.insert(100,n)
+
+	boton_multiplicar = tk.Button(window,text='x',command=multiplicar)
+	boton_multiplicar.place(x=210,y=70,relwidth=0.16,relheight=0.10)
+
+	def restar():
+		n = '-'
+		pantalla.insert(100,n)
+
+	boton_restar = tk.Button(window,text='-',command=restar)
+	boton_restar.place(x=170,y=70,relwidth=0.16,relheight=0.10)
+
+	def sumar():
+		n = '+'
+		pantalla.insert(100,n)
+
+	boton_sumar = tk.Button(window,text='+',command=sumar)
+	boton_sumar.place(x=130,y=70,relwidth=0.16,relheight=0.10)
+
+	def c():
+		pantalla.delete(0,'end')
+
+	boton_borrar = tk.Button(window,text='C',command=c)
+	boton_borrar.place(x=90,y=70,relwidth=0.16,relheight=0.10)
+
+	def nueve():
+		n = 9
+		pantalla.insert(100,n)
+
+	boton_nueve = tk.Button(window,text='9',command=nueve)
+	boton_nueve.place(x=170,y=100,relwidth=0.16,relheight=0.10)
+
+	def ocho():
+		n = 8
+		pantalla.insert(100,n)
+
+	boton_ocho = tk.Button(window,text='8',command=ocho)
+	boton_ocho.place(x=130,y=100,relwidth=0.16,relheight=0.10)
+
+	def siete():
+		n = 7
+		pantalla.insert(100,n)
+
+	boton_siete = tk.Button(window,text='7',command=siete)
+	boton_siete.place(x=90,y=100,relwidth=0.16,relheight=0.10)
+
+	def seis():
+		n = 6
+		pantalla.insert(100,n)
+
+	boton_seis = tk.Button(window,text='6',command=seis)
+	boton_seis.place(x=170,y=130,relwidth=0.16,relheight=0.10)
+
+	def cinco():
+		n = 5
+		pantalla.insert(100,n)
+
+	boton_cinco = tk.Button(window,text='5',command=cinco)
+	boton_cinco.place(x=130,y=130,relwidth=0.16,relheight=0.10)
+
+	def cuatro():
+		n = 4
+		pantalla.insert(100,n)
+
+	boton_cuatro = tk.Button(window,text='4',command=cuatro)
+	boton_cuatro.place(x=90,y=130,relwidth=0.16,relheight=0.10)
 
 
-	boton_resta = tk.Button(window,text='Restar',command=resta)
-	boton_resta.place(x=200,y=180,relwidth=0.30,relheight=0.09)
+	def tres():
+		n = 3
+		pantalla.insert(100,n)
+
+	boton_tres = tk.Button(window,text='3',command=tres)
+	boton_tres.place(x=170,y=160,relwidth=0.16,relheight=0.10)
+
+	def dos():
+		n = 2
+		pantalla.insert(100,n)
+
+	boton_dos = tk.Button(window,text='2',command=dos)
+	boton_dos.place(x=130,y=160,relwidth=0.16,relheight=0.10)
 
 
-	def multiplica():
-		numero1 = numero_entrada_1.get()
-		numero2 = numero_entrada_2.get()
+	def uno():
+		n = 1
+		pantalla.insert(100,n)
 
-		r = int(numero1) * int(numero2)
-		numero_resultado.delete(0,'end')
-		numero_resultado.insert(0,r)
-
-
-	boton_multiplicacion = tk.Button(window,text='Multiplicar',command=multiplica)
-	boton_multiplicacion.place(x=10,y=220,relwidth=0.30,relheight=0.09)
-
-	def division():
-		numero1 = numero_entrada_1.get()
-		numero2 = numero_entrada_2.get()
-
-		r = float(numero1) / float(numero2)
-		numero_resultado.delete(0,'end')
-		numero_resultado.insert(0,r)
-
-
-	boton_division = tk.Button(window,text='Dividir',command=division)
-	boton_division.place(x=200,y=220,relwidth=0.30,relheight=0.09)
+	boton_uno = tk.Button(window,text='1',command=uno)
+	boton_uno.place(x=90,y=160,relwidth=0.16,relheight=0.10)
 
 	def salir_ventana_calculadora():
 		resultado = messagebox.askquestion("Salir", 'Quieres salir de la calculadora?', icon='question', default='no')

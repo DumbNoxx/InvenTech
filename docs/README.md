@@ -18,4 +18,7 @@ La ventana principal presenta un menu sencillo y muy amigable con solo 4 botones
 He actualizado la ventana de la calculadora para que se vea mas interactiva, se ve mas como una calculadora corriente, aun no esta terminada, pero ahi vamos dandole duro. Vamos con todo con esta app.
 
 
+## Sobre el release
+Todavia no voy a subir un release de la app, porque todavia no hace lo que quiero, cuando logre llegar al 1% de lo que quiero que haga la app subire el release para que puedan medio probarlas, todavia no habra beta, asi que no la pidan. xd
+
 ### Esto es lo que se lleva hasta el momento espero les guste y apoyen mi proyecto, estoy creando apps para escritorio, un placer. :3

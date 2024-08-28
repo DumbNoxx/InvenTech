@@ -1,6 +1,11 @@
 import tkinter as tk
 from tkinter import messagebox
 import subprocess
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+calculadoras = os.getenv('SCRIPT_CALCULADORA') 
 
 ventana = tk.Tk()
 ventana.geometry('600x350')
@@ -15,7 +20,7 @@ menu.place(x=190,y=50,relwidth=0.35,relheight=0.07)
 
 
 def calcular():
-	subprocess.run(['python3','/media/dylan/Nuevo vol/pc/Documents/programacion/Python/SIstema_de_inventario/scripts/calculadora.py'])
+	subprocess.run(['python3',calculadoras])
 
 boton_calculadora = tk.Button(ventana,text='Calculadora',command=calcular)
 boton_calculadora.place(x=190,y=90,relwidth=0.35,relheight=0.10)
